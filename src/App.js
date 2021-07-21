@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import { connect } from "react-redux";
+import { getPosts } from "./redux/actions/postsActions";
 
-function App() {
+function App(props) {
+  useEffect(() => {
+    props.getPosts();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Redux & Fake Rest API</h1>
+      {props.posts.posts.map((post) => {
+        return (
+          <div key={post.id}>
+            <p>Title: {post.title}</p>
+          </div>
+        );
+      })}
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  console.log("this is state", state);
+  return {
+    posts: state.postsReducer,
+  };
+};
+
+export default connect(mapStateToProps, { getPosts })(App);
