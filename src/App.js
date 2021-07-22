@@ -1,31 +1,36 @@
-import React, { useEffect } from "react";
-import "./App.css";
-import { connect } from "react-redux";
-import { getPosts } from "./redux/actions/postsActions";
+import React from "react";
+import "./App.scss";
+import ArticleList from "./components/ArticleList/ArticleList";
+import ArticleSingle from "./components/ArticleSingle/ArticleSingle";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function App(props) {
-  useEffect(() => {
-    props.getPosts();
-  }, []);
+import logo from "./assets/img/blogging.png";
+
+const App = (props) => {
+  console.log(props);
   return (
-    <div className="App">
-      <h1>React Redux & Fake Rest API</h1>
-      {props.posts.posts.map((post) => {
-        return (
-          <div key={post.id}>
-            <p>Title: {post.title}</p>
+    <Router>
+      <div className="app">
+        <div className="app__header">
+          <Link to="/">back</Link>
+          <div className="app__logo">
+            <img className="app__logo--img" src={logo} alt="" />
+            <h3>BLOG</h3>
           </div>
-        );
-      })}
-    </div>
+        </div>
+        <div className="app__body">
+          <Switch>
+            <Route exact path="/">
+              <ArticleList />
+            </Route>
+            <Route path="/:id">
+              <ArticleSingle />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
-}
-
-const mapStateToProps = (state) => {
-  console.log("this is state", state);
-  return {
-    posts: state.postsReducer,
-  };
 };
 
-export default connect(mapStateToProps, { getPosts })(App);
+export default App;

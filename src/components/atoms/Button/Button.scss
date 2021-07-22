@@ -1,0 +1,20 @@
+.btn {
+  button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #eb8989;
+    box-shadow: -6px -6px 7px #db7f7f, 6px 6px 7px #fb9393;
+    padding: 1rem;
+    font-weight: 700;
+    transition: 0.5s ease-out;
+    &:hover {
+      background: #eb8989;
+      box-shadow: -7px -7px 0px #db7f7f, 7px 7px 0px #fb9393;
+      transition: 0.5s;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
