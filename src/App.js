@@ -26,7 +26,7 @@ const App = (props) => {
         </div>
         <div className="app__body">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/land">
               <ArticleList />
             </Route>
             <Route path="/article/:id">
