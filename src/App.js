@@ -13,14 +13,14 @@ const App = (props) => {
     <Router>
       <div className="app">
         <div className="app__header">
-          <Link className="app__anchors" to="/">
+          <Link className="app__anchors" to="/land">
             <h4>HOME</h4>
           </Link>
           <div className="app__logo">
             <img className="app__logo--img" src={logo} alt="" />
             <h3>BLOG</h3>
           </div>
-          <Link className="app__anchors" to="/favourites">
+          <Link className="app__anchors" to="/land/favourites">
             <h3>FAVOURITES</h3>
           </Link>
         </div>
@@ -29,10 +29,10 @@ const App = (props) => {
             <Route exact path="/land">
               <ArticleList />
             </Route>
-            <Route path="/article/:id">
+            <Route path="land/article/:id">
               <ArticleSingle />
             </Route>
-            <Route path="/favourites">
+            <Route path="land/favourites">
               <Favourites />
             </Route>
           </Switch>
