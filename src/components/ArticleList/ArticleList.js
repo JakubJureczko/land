@@ -20,13 +20,11 @@ const ArticleList = (props) => {
     <div className="list">
       {props.posts.length !== 0 &&
         props.posts.posts.map((el) => (
-          <div className="list__card">
-            <Link to={`/article/${el.id}`} key={el.id}>
-              <div className="articleList">
-                <h4>{el.title}</h4>
-              </div>
-            </Link>
-          </div>
+          <Link className="list__card" to={`/article/${el.id}`} key={el.id}>
+            <div className="articleList">
+              <h4>{el.title}</h4>
+            </div>
+          </Link>
         ))}
     </div>
   );

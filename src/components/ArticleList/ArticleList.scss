@@ -6,6 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: #523333;
+  }
+
   &__card {
     display: flex;
     justify-content: center;
@@ -28,10 +34,6 @@
       background: #eb8989;
       box-shadow: -6px -6px 7px #db7f7f, 6px 6px 7px #fb9393;
       transition: 0.5s;
-    }
-    a {
-      text-decoration: none;
-      color: #523333;
     }
   }
 }
