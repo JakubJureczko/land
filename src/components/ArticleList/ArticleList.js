@@ -17,18 +17,18 @@ const ArticleList = (props) => {
   console.log(props.posts.posts);
 
   return (
-    <>
+    <div className="list">
       {props.posts.length !== 0 &&
         props.posts.posts.map((el) => (
-          <Link to={`/${el.id}`} key={el.id}>
-            <div className="articleList">
-              <p>
-                {el.id} {el.title}
-              </p>
-            </div>
-          </Link>
+          <div className="list__card">
+            <Link to={`/article/${el.id}`} key={el.id}>
+              <div className="articleList">
+                <h4>{el.title}</h4>
+              </div>
+            </Link>
+          </div>
         ))}
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 .btn {
   button {
+    cursor: pointer;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -8,6 +9,10 @@
     padding: 1rem;
     font-weight: 700;
     transition: 0.5s ease-out;
+    min-width: 10rem;
+    @media screen and (max-width: 992px) {
+      margin: 1rem 0;
+    }
     &:hover {
       background: #eb8989;
       box-shadow: -7px -7px 0px #db7f7f, 7px 7px 0px #fb9393;

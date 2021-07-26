@@ -11,6 +11,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0 5rem;
+      @media screen and (max-width: 992px) {
+        margin: 0 1rem;
+      }
       &--img {
         height: 2rem;
         margin-right: 1rem;
@@ -19,5 +23,10 @@
   }
   .app__body {
     margin: 0 10%;
+  }
+  &__anchors {
+    color: #523333;
+
+    text-decoration: none !important;
   }
 }

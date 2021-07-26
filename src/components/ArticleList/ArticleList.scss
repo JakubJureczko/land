@@ -1,3 +1,37 @@
 .articleList {
   padding: 0.5rem;
 }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    width: 25%;
+    // border: 5px solid #db7f7f;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    background: #eb8989;
+    box-shadow: -7px -7px 0px #db7f7f, 7px 7px 0px #fb9393;
+    position: relative;
+    margin-bottom: 3rem;
+    transition: ease-out 0.5s;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+    &:hover {
+      background: #eb8989;
+      box-shadow: -6px -6px 7px #db7f7f, 6px 6px 7px #fb9393;
+      transition: 0.5s;
+    }
+    a {
+      text-decoration: none;
+      color: #523333;
+    }
+  }
+}
