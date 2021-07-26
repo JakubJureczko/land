@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/JakubJureczko/land/static/css/main.f90fbe85.chunk.css",
-    "main.js": "/JakubJureczko/land/static/js/main.c04478d3.chunk.js",
-    "main.js.map": "/JakubJureczko/land/static/js/main.c04478d3.chunk.js.map",
-    "runtime-main.js": "/JakubJureczko/land/static/js/runtime-main.6ecc0eef.js",
-    "runtime-main.js.map": "/JakubJureczko/land/static/js/runtime-main.6ecc0eef.js.map",
-    "static/js/2.acceccfc.chunk.js": "/JakubJureczko/land/static/js/2.acceccfc.chunk.js",
-    "static/js/2.acceccfc.chunk.js.map": "/JakubJureczko/land/static/js/2.acceccfc.chunk.js.map",
-    "static/js/3.7732002b.chunk.js": "/JakubJureczko/land/static/js/3.7732002b.chunk.js",
-    "static/js/3.7732002b.chunk.js.map": "/JakubJureczko/land/static/js/3.7732002b.chunk.js.map",
-    "index.html": "/JakubJureczko/land/index.html",
-    "static/css/main.f90fbe85.chunk.css.map": "/JakubJureczko/land/static/css/main.f90fbe85.chunk.css.map",
-    "static/js/2.acceccfc.chunk.js.LICENSE.txt": "/JakubJureczko/land/static/js/2.acceccfc.chunk.js.LICENSE.txt",
-    "static/media/blogging.5c617a98.png": "/JakubJureczko/land/static/media/blogging.5c617a98.png"
+    "main.css": "/land/static/css/main.f90fbe85.chunk.css",
+    "main.js": "/land/static/js/main.c04478d3.chunk.js",
+    "main.js.map": "/land/static/js/main.c04478d3.chunk.js.map",
+    "runtime-main.js": "/land/static/js/runtime-main.1d45e0e5.js",
+    "runtime-main.js.map": "/land/static/js/runtime-main.1d45e0e5.js.map",
+    "static/js/2.acceccfc.chunk.js": "/land/static/js/2.acceccfc.chunk.js",
+    "static/js/2.acceccfc.chunk.js.map": "/land/static/js/2.acceccfc.chunk.js.map",
+    "static/js/3.7732002b.chunk.js": "/land/static/js/3.7732002b.chunk.js",
+    "static/js/3.7732002b.chunk.js.map": "/land/static/js/3.7732002b.chunk.js.map",
+    "index.html": "/land/index.html",
+    "static/css/main.f90fbe85.chunk.css.map": "/land/static/css/main.f90fbe85.chunk.css.map",
+    "static/js/2.acceccfc.chunk.js.LICENSE.txt": "/land/static/js/2.acceccfc.chunk.js.LICENSE.txt",
+    "static/media/blogging.5c617a98.png": "/land/static/media/blogging.5c617a98.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ecc0eef.js",
+    "static/js/runtime-main.1d45e0e5.js",
     "static/js/2.acceccfc.chunk.js",
     "static/css/main.f90fbe85.chunk.css",
     "static/js/main.c04478d3.chunk.js"
